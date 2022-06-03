@@ -35,6 +35,20 @@ header {
 
 main {
   @include main.shrink(70%);
+
+  @include main.large-screens {
+    @include main.shrink(70%, 20px 0);
+  }
+
+  @include main.laptop-screens {
+    @include main.shrink(80%, 20px 0);
+  }
+  @include main.tablet-screens {
+    @include main.shrink(90%, 20px 20px);
+  }
+  @include main.mobile-screens {
+    @include main.shrink(90%, 20px 20px);
+  }
 }
 
 ul {
