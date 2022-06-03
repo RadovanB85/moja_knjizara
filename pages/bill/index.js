@@ -1,0 +1,9 @@
+function BillPage() {
+  return (
+    <div>
+      <h1>Bill Page</h1>
+    </div>
+  );
+}
+
+export default BillPage;

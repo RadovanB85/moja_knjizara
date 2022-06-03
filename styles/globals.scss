@@ -1,0 +1,70 @@
+@use "./_base/main.scss" as main;
+
+html {
+  min-width: 380px;
+  font-family: main.$main-font;
+  font-weight: normal;
+  font-style: normal;
+
+  @include main.large-screens {
+    font-size: main.calcRem(22px);
+  }
+  @include main.desctop-screens {
+    font-size: main.calcRem(21px);
+  }
+  @include main.laptop-screens {
+    font-size: main.calcRem(19px);
+  }
+  @include main.tablet-screens {
+    font-size: main.calcRem(18px);
+  }
+  @include main.mobile-screens {
+    font-size: main.calcRem(16px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: main.$background_color_white;
+}
+
+main {
+  @include main.shrink(70%);
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: main.$dark_text-primary;
+}
+
+p {
+  color: main.$light_text;
+}
+
+a {
+  text-decoration: none;
+  color: main.$light_text;
+}
+
+body {
+  background-color: main.$background_color_grey;
+}
+
+img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}

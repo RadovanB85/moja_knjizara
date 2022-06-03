@@ -1,0 +1,118 @@
+@use "../../styles/_base/main.scss" as main;
+
+// ------------------------------
+// main nav bar wrapper
+// ------------------------------
+
+.header_navbar_wrapper {
+  @include main.shrink(70%, 20px 0);
+
+  @include main.large-screens {
+    @include main.shrink(70%, 20px 0);
+  }
+
+  @include main.laptop-screens {
+    @include main.shrink(80%, 20px 0);
+  }
+  @include main.tablet-screens {
+    @include main.shrink(90%, 20px 0);
+  }
+  @include main.mobile-screens {
+    @include main.shrink(100%, 20px 0);
+  }
+}
+
+// ------------------------------
+// main nav bar container
+// ------------------------------
+.header_navbar_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "navLogo navLinks navBasket";
+  align-items: center;
+  @include main.desctop-screens {
+    grid-template-columns: 1fr 3fr 1.6fr;
+  }
+  @include main.tablet-screens {
+    grid-template-areas:
+      "navBasket navBasket navBasket" "navLogo . navHamburge"
+      "navLinks navLinks navLinks";
+  }
+}
+
+// ------------------------------
+// main nav bar Logo
+// ------------------------------
+.header_navbar_logo {
+  grid-area: navLogo;
+  @include main.navIMGs(50px);
+  cursor: pointer;
+}
+
+.header_navbar_nav_wrapper {
+  grid-area: navLinks;
+}
+
+// ------------------------------
+// main nav bar Nav Links
+// ------------------------------
+
+.header_navbar_nav_container {
+  display: flex;
+  justify-content: center;
+
+  gap: 40px;
+  @include main.laptop-screens {
+    gap: 10px;
+  }
+  @include main.tablet-screens {
+    gap: 10px;
+  }
+}
+
+.nav_item {
+  cursor: pointer;
+}
+
+// ------------------------------
+// main nav bar basket
+// ------------------------------
+
+.header_navbar_basket_wrapper {
+  grid-area: navBasket;
+}
+
+.header_navbar_basket_container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  @include main.laptop-screens {
+    gap: 0px;
+  }
+}
+.header_basket_img {
+  @include main.navIMGs(40px);
+  cursor: pointer;
+}
+
+.header_basket_amount_book {
+  font-size: 0.6rem;
+}
+.header_basket_amount_bill_amount {
+  font-size: 1.2rem;
+
+  span {
+    color: main.$light_text;
+  }
+}
+
+// ------------------------------
+// header banner
+// ------------------------------
+.header_banner_item {
+  img {
+    width: 100%;
+  }
+}

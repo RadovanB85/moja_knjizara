@@ -1,0 +1,17 @@
+// background color
+$background_color_grey: #e6e7e7;
+$background_color_blue: #0098d9;
+$background_color_white: #ffffff;
+$background_color_light-blue: rgba(
+  $color: $background_color_blue,
+  $alpha: 0.25,
+);
+
+// text color
+$blue_primary: #0098d9;
+$blue_secondary: #42b6e8;
+$grey_primary: #6a6768;
+$grey_secondary: #827f80;
+$dark_text-primary: #373334;
+$dark_text: #383336;
+$light_text: #83888e;

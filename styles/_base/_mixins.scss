@@ -1,0 +1,47 @@
+@mixin shrink($width: 80%, $padding: 0px) {
+  width: $width;
+  padding: $padding;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@mixin flexHirizontal() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin navIMGs($height: 80px) {
+  height: $height;
+  img {
+    height: 100%;
+  }
+}
+
+@mixin imageAndTextBelowe($width: 80px, $height: auto, $fontSize: 0.5rem) {
+  width: $width;
+  height: $height;
+  img {
+    width: 100%;
+  }
+  p {
+    text-align: center;
+    font-size: $fontSize;
+  }
+}
+
+@mixin movingUp($pixels) {
+  position: relative;
+  top: $pixels;
+}
+
+@mixin paragraphs($fontSize: 1rem, $colorFont: inherit, $lineHeight: inherit) {
+  font-size: $fontSize;
+  line-height: inherit;
+  color: $colorFont;
+}
+
+@mixin clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
