@@ -1,8 +1,13 @@
-function BookList() {
+import BookItem from "./bookItem";
+
+function BookList(props) {
+  const { books } = props;
   return (
-    <div>
-      <h1>Book List</h1>
-    </div>
+    <ul>
+      {books.map((book) => {
+        return <BookItem key={book.ISBN} data={book} />;
+      })}
+    </ul>
   );
 }
 
