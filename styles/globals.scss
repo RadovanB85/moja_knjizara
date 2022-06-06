@@ -77,8 +77,29 @@ body {
   background-color: main.$background_color_grey;
 }
 
+input {
+  font-family: main.$main-font;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 img {
   display: block;
   padding: 0;
   margin: 0;
+}
+
+.headline {
+  @include main.shrink(100%, 30px 0);
+  font-size: 1.7rem;
 }

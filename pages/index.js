@@ -4,6 +4,7 @@ import classes from "./index.module.scss";
 
 export default function Home() {
   const allBooks = getAllBooks();
+
   return (
     <div className={classes.home_wrapper}>
       <div className={classes.home_container}>

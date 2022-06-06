@@ -1,0 +1,5 @@
+@use "../../styles/_base/main" as main;
+
+.search_wrapper {
+  @include main.shrink(100%, 0px 10px);
+}
