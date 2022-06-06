@@ -27,7 +27,7 @@
 
 // item container
 .headline_item {
-  @include main.navIMGs(50px);
+  @include main.navIMGs(40px);
   display: flex;
   align-items: center;
   gap: 20px;

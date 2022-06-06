@@ -22,3 +22,14 @@
 .layer_logo_item {
   @include main.navIMGs(30px);
 }
+
+.layer_actions {
+  @media screen and (max-width: 541px) {
+    width: 50%;
+  }
+  input {
+    @media screen and (max-width: 541px) {
+      width: 95%;
+    }
+  }
+}

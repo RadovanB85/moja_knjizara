@@ -1,7 +1,6 @@
 import classes from "./form.module.scss";
 
 function FormList(props) {
-  console.log(props.data);
   return (
     <div className={classes.search_container}>
       <div className={classes.search_container_headline_container}>

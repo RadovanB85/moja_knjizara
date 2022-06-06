@@ -28,19 +28,19 @@ function BookItem(props) {
             <img src={"/" + slika} alt={naziv} />
           </div>
           <div className={classes.book_description}>
-            <p>{pisac}</p>
-            <h3>{naziv}</h3>
-            <p>{godina}</p>
-            <p>{opis.substring(0, 250)}</p>
+            <p className={classes.pisac}>{pisac}</p>
+            <h3 className={classes.naslov}>{naziv}</h3>
+            <p className={classes.godina}>{godina}</p>
+            <p className={classes.opis}>{opis.substring(0, 203)}</p>
+            <div className={classes.book_item_btn}>
+              <p>
+                <span>
+                  <img src={"/images/Detaljnije.svg"} alt="detaljnije" />
+                </span>
+                <span>Detaljnije</span>
+              </p>
+            </div>
           </div>
-          <button className={classes.book_item_btn}>
-            <p>
-              <span>
-                <img src={"/images/Detaljnije.svg"} alt="detaljnije" />
-                Detaljnije
-              </span>
-            </p>
-          </button>
         </div>
         <div className={classes.book_item_basket_container}>
           <div className={classes.book_item_basket_price}>

@@ -5,10 +5,10 @@ import BookList from "../../components/books/bookList";
 
 import classes from "./index.module.scss";
 import LayerSection from "../../components/layer/layer";
+import SearchItemsList from "../../components/searchitems/searchitemslist";
 
 function SearchPage() {
   const allBooks = getAllBooks();
-  console.log(allBooks);
 
   return (
     <div className={classes.search_wrapper}>
@@ -20,7 +20,7 @@ function SearchPage() {
         <LayerSection />
       </div>
       <div className={classes.books_wrapper}>
-        <BookList books={allBooks} />
+        <SearchItemsList books={allBooks} />
       </div>
     </div>
   );

@@ -1,46 +1,47 @@
 @use "../../styles/_base/main" as main;
 
 // ----------------------------------
-// BOOK ITEM MAIN WRAPPER
+// SEARCH ITEM MAIN WRAPPER
 // ----------------------------------
 
-.book_item_wrapper {
+.search_item_wrapper {
   @include main.shrink(100%, 0 0 0 10px);
   border-bottom: 1px solid black;
 }
 
 // ----------------------------------
-// BOOK ITEM MAIN CONTAINER
+// SEARCH ITEM MAIN CONTAINER
 // ----------------------------------
 
-.book_item_container {
+.search_item_container {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 // ----------------------------------
-// BOOK ITEM DESCRIPTION CONTAINER
+// SEARCH ITEM DESCRIPTION CONTAINER
 // ----------------------------------
 
-.book_item {
-  flex-grow: 6;
+.search_item {
+  flex-grow: 7;
   display: flex;
   gap: 20px;
 }
 
 // ----------------------------------
-// BOOK ITEM DESCRIPTION IMG
+// SEARCH ITEM DESCRIPTION IMG
 // ----------------------------------
 
-.book_img {
+.search_img {
   @include main.navIMGs(150px);
 }
 
 // ----------------------------------
-// BOOK ITEM DESCRIPTION TEXT
+// SEARCH ITEM DESCRIPTION TEXT
 // ----------------------------------
 
-.book_description {
+.search_description {
   .pisac {
     font-size: 0.7rem;
     margin-bottom: 15px;
@@ -80,4 +81,44 @@
       margin-bottom: 0;
     }
   }
+}
+
+// ----------------------------------
+// SEARCH ITEM BASKET CONTAINER
+// ----------------------------------
+
+.search_item_basket_container {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  gap: 60px;
+  width: 250px;
+}
+
+// ----------------------------------
+// SEARCH ITEM BASKET PRICE CONTAINER
+// ----------------------------------
+
+.search_item_basket_price {
+  text-align: right;
+}
+
+.search_item_action_add_item_container {
+  border: 1px solid black;
+  button {
+    margin: 0;
+  }
+}
+
+.search_item_action_add_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+
+.action_add_item_img {
+  @include main.navIMGs(20px);
 }
