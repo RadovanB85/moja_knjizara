@@ -24,13 +24,7 @@ function FormList(props) {
         </div>
         <div className={classes.search_form_container}>
           <label htmlFor="oblasst">Oblast</label>
-          <input
-            type="text"
-            list="oblast"
-            name="oblast"
-            id="oblast"
-            size="30"
-          />
+          <input type="text" list="oblast" name="oblast" id="oblast" />
           <datalist id="oblast">
             <option value="c++" />;
             <option value="javascript" />;
@@ -55,8 +49,8 @@ function FormList(props) {
             min="0"
           />
           <datalist id="cena">
-            <option value="2000" />;
-            <option value="2500" />;
+            <option value="2000">2000</option>;
+            <option value="2500">2500</option>;
           </datalist>
         </div>
         <div className={classes.search_form_container}>

@@ -1,0 +1,24 @@
+@use "../../styles/_base/main" as main;
+
+.layer_section_wrapper {
+  background-color: main.$background_color_secondary_blue;
+}
+
+.layer_section_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.layer_logo_text_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.layer_logo_item {
+  @include main.navIMGs(30px);
+}

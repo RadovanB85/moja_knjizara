@@ -4,6 +4,7 @@ import { getAllBooks } from "../../data";
 import BookList from "../../components/books/bookList";
 
 import classes from "./index.module.scss";
+import LayerSection from "../../components/layer/layer";
 
 function SearchPage() {
   const allBooks = getAllBooks();
@@ -15,7 +16,9 @@ function SearchPage() {
       <div className={classes.search_form_wrapper}>
         <FormList data={allBooks} />
       </div>
-      <div className={classes.layer}></div>
+      <div className={classes.layer}>
+        <LayerSection />
+      </div>
       <div className={classes.books_wrapper}>
         <BookList books={allBooks} />
       </div>
